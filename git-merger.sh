@@ -10,7 +10,7 @@ REPO_LIST=""
 fetch_repositories() {
     local PAGE=1
     while true; do
-        RESPONSE=$(curl -s -H "Authorization: token $GITEA_TOKEN" "$GITEA_SERVICE_PROVIDER/api/v1/users/$GITEA_USERNAME/repos?page=$PAGE")
+        RESPONSE=$(curl -s -H "Authorization: token $GITEA_ACCESS_TOKEN" "$GITEA_SERVICE_PROVIDER/api/v1/users/$GITEA_USERNAME/repos?page=$PAGE")
         if [ "$RESPONSE" == "[]" ]; then
             break
         fi
