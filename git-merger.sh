@@ -1,11 +1,7 @@
 #!/bin/bash
 
 # SETTINGS
-GITHUB_USERNAME="your_github_username"
-GITHUB_ACCESS_TOKEN="your_personal_access_token"
-GITEA_USERNAME="your_gitea_username"
-GITEA_ACCESS_TOKEN="your-gitea-token"
-GITEA_SERVICE_PROVIDER="your_provider" #https://mygiteaserver.me
+source config.conf
 
 # GRABBING LIST OF REPOSITORIES
 PAGE=1 # STARTING PAGE
@@ -22,6 +18,8 @@ fetch_repositories() {
         ((PAGE++))
     done
 }
+fetch_repositories
+
 echo "List of repositories:"
 echo "$REPO_LIST"
 echo "Press enter to continue..."
