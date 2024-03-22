@@ -6,7 +6,8 @@ Shell script for mirroring Gitea repositories to GitHub while preserving commit 
 1. Set up your settings: **config.conf**
 
 ```
-
+GITHUB_USERNAME="your_github_username"
+GITHUB_ACCESS_TOKEN="your-github-token"
 GITEA_USERNAME="your_gitea_username"
 GITEA_ACCESS_TOKEN="your-gitea-token"
 GITEA_SERVICE_PROVIDER="your_provider" #https://mygiteaserver.me 
