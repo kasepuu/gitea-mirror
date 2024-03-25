@@ -3,7 +3,7 @@
 Shell script for mirroring Gitea repositories to GitHub while preserving commit history.
 
 ### Usage 
-1. Set up your settings: **config.conf**
+* **[1]** Set up your settings: **config.conf**
 
 ```
 GITHUB_USERNAME="your_github_username"
@@ -15,18 +15,10 @@ GITEA_SERVICE_PROVIDER="your_provider" #https://mygiteaserver.me
 [GITHUB_ACCESS_TOKEN](https://github.com/settings/tokens)   
 **Note**: Ensure that GITEA_SERVICE_PROVIDER does not end with a "/".
 
-
-
-2. Execute one of the two 
-#### Usage 'git-merger.sh'
-* The script clones Gitea repositories and mirrors them to GitHub.  
+* **[2]** - Execute the script
 ```
-    :~$ bash git-merger.sh
-```
-#### Usage 'singular-merge.sh'
-*  This script clones and mirrors a singular repoistory, this could be merged with the first script, but I am currently too lazy for that.
-```
-    :~$ bash singular-merge.sh https://mygiteaserver.me/user/project-repository
+mirror everything   => :~$ bash git-merger.sh 
+mirror target repo. => :~$ bash git-merger.sh https://mygiteaserver.me/user/project-repository
 ```
 
 #### Additional Notes
