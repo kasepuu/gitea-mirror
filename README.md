@@ -3,7 +3,7 @@
 Shell script for mirroring Gitea repositories to GitHub while preserving commit history.
 
 ### Usage 
-* **[1]** Set up your settings: **config.conf**
+* **[1]** - Set up your settings: **config.conf**
 
 ```
 GITHUB_USERNAME="your_github_username"
